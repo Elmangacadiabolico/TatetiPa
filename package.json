@@ -1,0 +1,14 @@
+{
+  "name": "tatetidel4044-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json": "^11.0.0"
+  }
+}

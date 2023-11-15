@@ -1,0 +1,15 @@
+ // Obtenemos una referencia al elemento de entrada y al botón
+const nombreInput = document.getElementById("nombreDelJugador1unoInput");
+const botonConfirmar = document.getElementById("jugador1deBTN");
+
+// Creamos una variable para almacenar el nombre del jugador
+let nombreJugador1 = "";
+
+// Agregamos un evento de clic al botón
+botonConfirmar.addEventListener("click", function () {
+    // Capturamos el valor del campo de entrada
+    nombreJugador1 = nombreInput.value;
+
+    // Puedes hacer lo que quieras con la variable nombreJugador aquí
+    console.log("El nombre del jugador es: " + nombreJugador1);
+});

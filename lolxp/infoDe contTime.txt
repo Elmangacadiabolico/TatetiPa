@@ -1,0 +1,18 @@
+lo primero que se hace es obtener las id :
+
+const contadorTurno = document.getElementById("contadorTurno"); [el spam]
+const finTurnoBtn = document.getElementById("finTurnoBtn");[boton]
+
+creamos una variable donde decimos en que valor empieza el contador : 
+let turno = 0;
+
+creamos una funcion donde se actializa continuamente el contador simpre y cuando se apriete el boton:
+function actualizarContadorTurno() {
+    contadorTurno.textContent = turno;
+}
+
+y por ultimo hacemos un evento donde, al paretar el boton, incremente en 1 el valor de "turno":
+finTurnoBtn.addEventListener("click", function() {
+    turno++;
+    actualizarContadorTurno();
+});

@@ -1,0 +1,278 @@
+.FondoBody {
+    background-color: black;
+}
+
+.img-thumbnail {
+    width: 6%;
+    height: 6%;
+    transition: transform 0.3s;
+}
+
+.modalp {
+    background: hsla(279, 66%, 37%, 1);
+    background: linear-gradient(
+        90deg,
+        hsla(279, 66%, 37%, 1) 0%,
+        hsla(0, 0%, 0%, 1) 43%
+    );
+    background: -moz-linear-gradient(
+        90deg,
+        hsla(279, 66%, 37%, 1) 0%,
+        hsla(0, 0%, 0%, 1) 43%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        hsla(279, 66%, 37%, 1) 0%,
+        hsla(0, 0%, 0%, 1) 43%
+    );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#72209F", endColorstr="#000000", GradientType=1 );
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(100, 4, 147, 0.7), 0 0 20px rgba(0, 0, 0, 0.527),
+        0 0 30px rgb(123, 0, 255);
+    width: 35%;
+    height: 30rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: purple solid 4px;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu2 {
+    display: flex;
+    text-align: center;
+}
+
+.nombrelol {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(72, 0, 0);
+    padding: 1re;
+}
+
+.botonRojo {
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(253, 0, 0, 0.7), 0 0 20px rgb(255, 0, 0),
+        0 0 30px rgb(255, 0, 0);
+}
+
+.botonRojo:hover {
+    transform: scale(1.2);
+}
+
+.botonAzul {
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 183, 255, 0.945), 0 0 20px rgb(0, 174, 255),
+        0 0 30px rgba(0, 174, 255, 0.719);
+}
+.botonAzul:hover {
+    transform: scale(1.2);
+}
+
+.ImagenElemento {
+    display: flex;
+    width: 100px;
+    height: 120px;
+    border: 50px;
+    transition: transform 0.3s;
+}
+
+.ImagenElemento:hover {
+    transform: scale(1.2); /* Aumentar el tamaño  un 10% */
+    cursor: pointer;
+}
+
+#TableroPepe{
+display:none
+
+}
+
+
+.tablero {
+
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: repeat(3, 10rem);
+    grid-gap: 10px;
+    width: 320px;
+    margin: 1rem;
+}
+
+.casilla {
+
+    display:flex;
+    width: 10rem;
+    height: 10rem;
+    background-color: #000000;
+    border: 2px solid #fffb00;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px; /* Añade un margen para separar las casillas */
+    -webkit-box-shadow: 29px 22px 29px -4px rgb(0, 0, 0);
+    -moz-box-shadow: 29px 22px 29px -9px rgba(156,156,156,1);
+    box-shadow: 0 0 10px rgba(100, 3, 119, 0.945), 0 0 20px rgb(131, 61, 243),
+    0 0 30px rgba(60, 4, 163, 0.719);
+    box-shadow: 29px 22px 29px -4px rgb(255, 223, 78);
+}
+
+.container{
+      display: flex;
+        position: relative;
+        left: 200px;
+}
+
+
+.casilla img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+
+.casilla:hover {
+    transform: scale(1.1); /* Aumentar el tamaño  un 10% */
+    cursor: pointer;
+}
+
+.botonDea {
+    margin: 1rem;
+}
+
+.inmputNamePlayers {
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(116, 0, 131, 0.945), 0 0 20px rgb(97, 0, 84),
+        0 0 30px rgba(172, 0, 252, 0.719);
+    border: purple solid 4px;
+}
+
+.JugadoresTitle {
+    color: rgb(250, 0, 0);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+#jugador1{
+
+    display: block;
+    
+    
+    }
+    
+    
+    #jugador2{
+    
+    display: none;
+    
+    }
+    .Claseees{
+        color:red
+        
+    }
+
+    .JUGADORPEPE{
+    color: rgb(255, 0, 255);
+        
+    }
+
+.JUGADORPEPE2{
+    color: rgb(255, 0, 255);
+
+
+}
+        
+.contenedorJUGADORPEPE2{
+    color: purple;
+    position: relative;
+    top:-35px;
+    left:1600px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(204, 0, 255, 0.7), 0 0 20px rgb(204, 0, 255), 0 0 30px rgb(204, 0, 255);
+  
+    
+}
+.contenedorJUGADORPEPE{
+    color: purple;
+     width: 200px;
+    box-shadow: 0 0 10px rgba(204, 0, 255, 0.7), 0 0 20px rgb(204, 0, 255), 0 0 30px rgb(204, 0, 255);
+    
+}
+.ganadorCHale {
+    color: rgb(0, 183, 255); 
+    text-align: center; /* Alineación del texto al centro */
+    padding: 10px;
+    animation: cambioColor 1000ms infinite; /*nombre de la animacion*/
+  }
+  
+  @keyframes cambioColor {
+    0% {
+      color: rgb(247, 1, 1);
+    }
+  
+    40% {
+        color: rgb(255, 0, 230); 
+      }
+      
+    20% {
+      color: rgb(255, 0, 0); 
+    }
+
+    50% {
+        color: rgb(0, 255, 234); 
+      }
+
+    75% {
+        color: rgb(0, 63, 253); 
+      }
+
+    100% {
+      color: rgb(0, 247, 45); 
+    }
+  }
+/*
+personas que hicieron este codigo :  Franco Racca ,Emanuel Isa Y  Leandro Rios BAS
+*/

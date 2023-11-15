@@ -1,0 +1,35 @@
+if (contenidoCelda === '') { ... }: Comprobamos si la celda está vacía (si su contenido es ''). Si es así, continuamos.
+
+event.target.textContent = jugador === 1 ? 'X' : 'O';: Asignamos el contenido de la celda al jugador actual (1 o 2) alternando entre 'X' y 'O'.
+
+jugador = jugador === 1 ? 2 : 1;: Cambiamos al siguiente jugador. Si jugador es 1, lo cambiamos a 2, y viceversa. Esto asegura que los jugadores se turnen para hacer clic.
+
+Finalmente, dentro del comentario // Puedes agregar aquí la lógica para verificar si alguien ganó el juego o si hay un empate, dependiendo de tus necesidades.
+
+Explicacion completa : 
+
+Por supuesto, aquí está una explicación del código:
+
+let jugador = 1;: Esto establece una variable jugador en 1 para representar al jugador 1 al comienzo del juego.
+
+const matrizElement = document.getElementById('matriz');: Esto busca en el documento HTML un elemento con el ID 'matriz' y lo almacena en la variable matrizElement. Asumo que en tu HTML tienes algún elemento con el ID 'matriz' que representa la matriz del juego.
+
+matrizElement.addEventListener('click', function(event) { ... });: Esto agrega un escuchador de eventos de clic al elemento matrizElement. Cuando se hace clic en el elemento, la función proporcionada se ejecuta.
+
+if (event.target.tagName === 'TD') { ... }: Dentro de la función de clic, verificamos si el objetivo del evento de clic es una celda <td> (celda de la tabla) dentro de la matriz. Esto asegura que solo respondamos a clics en celdas válidas de la matriz.
+
+const contenidoCelda = event.target.textContent;: Obtenemos el contenido de la celda en la que se hizo clic (puede ser '', 'X' o 'O').
+
+if (contenidoCelda === '') { ... }: Comprobamos si la celda está vacía (si su contenido es ''). Si es así, continuamos.
+
+event.target.textContent = jugador === 1 ? 'X' : 'O';: Asignamos el contenido de la celda al jugador actual (1 o 2) alternando entre 'X' y 'O'.
+
+jugador = jugador === 1 ? 2 : 1;: Cambiamos al siguiente jugador. Si jugador es 1, lo cambiamos a 2, y viceversa. Esto asegura que los jugadores se turnen para hacer clic.
+
+Finalmente, dentro del comentario // Puedes agregar aquí la lógica para verificar si alguien ganó el juego o si hay un empate, dependiendo de tus necesidades., puedes agregar la lógica adicional que necesites para determinar si un jugador ha ganado el juego o si el juego ha terminado en empate, según las reglas de tu juego.
+
+Este código proporciona una estructura básica para permitir a los jugadores hacer clic en una matriz y alternar entre 'X' y 'O' como jugadores, pero necesitarás agregar lógica adicional para determinar el resultado del juego y verificar si alguien ha ganado.
+
+
+
+
